@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon TCG Card Search (TCGdex)</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <header class="header">
+        <h1> Procurador de Cartas Pokémon TCG (TCGdex)</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Digita o nome do Pokémon em mente (ex: Pikachu, )..." aria-label="Termo de Pesquisa">
+            <button onclick="searchCards()">Procurar!🔍</button>
+        </div>
+    </header>
+
+    <main id="cardResults" class="results-grid">
+        <p class="initial-message">Usa a barra de pesquisa acima para encontrar tuas cartas Pokémon!</p>
+    </main>
+
+    <script src="script.js" defer></script>
+    </body>
+</html>
