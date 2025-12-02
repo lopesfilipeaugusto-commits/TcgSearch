@@ -1,0 +1,100 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f2f7; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #3b4cca;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#searchInput {
+    padding: 10px 15px;
+    width: 60%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffde00; /* Amarelo de Pokémon */
+    color: #3b4cca;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #ffc900;
+}
+
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.card-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card-item:hover {
+    transform: scale(1.03);
+}
+
+.card-item h3 {
+    color: #3b4cca;
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+.card-item p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.card-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 5px solid #ffde00; /* Borda amarela */
+}
+
+.loading-message, .error-message, .initial-message {
+    grid-column: 1 / -1; /* Ocupa toda a largura do grid */
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2em;
+}
+.error-message {
+     color: red;
+}
